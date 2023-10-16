@@ -16,22 +16,22 @@ namespace Unit2Project.Models
                 new Videogame
                 {
                     VideogameID = 1,
-                    Name = "Casablanca",
-                    Year = 1942,
+                    Name = "Modern Warfare 2",
+                    YearReleased = 2009,
                     Rating = 5
                 },
                 new Videogame
                 {
                     VideogameID = 2,
                     Name = "Wonder Woman",
-                    Year = 2017,
+                    YearReleased = 2017,
                     Rating = 3
                 },
                 new Videogame
                 {
                     VideogameID = 3,
                     Name = "Moonstruck",
-                    Year = 1988,
+                    YearReleased = 1988,
                     Rating = 4
                 }
             );

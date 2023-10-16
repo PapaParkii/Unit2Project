@@ -6,7 +6,8 @@
 <h2>Videogames</h2>
 
 <a asp-controller="Videogame" asp-action="Add">Add New Game</a>
-<table class="table table-bordered table-striped">
+<div class="table-responsive">
+<table class="table">
     <thead>
         <tr>
             <th>Name</th>
@@ -20,7 +21,7 @@
         {
             <tr>
                 <td>@videogame.Name</td>
-                <td>@videogame.Year</td>
+                <td>@videogame.YearReleased</td>
                 <td>@videogame.Rating</td>
                 <td>
                     <a asp-controller="Videogame" asp-action="Edit"
@@ -32,3 +33,4 @@
         }
     </tbody>
 </table>
+</div>

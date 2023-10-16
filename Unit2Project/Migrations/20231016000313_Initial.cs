@@ -19,7 +19,7 @@ namespace Unit2Project.Migrations
                     VideogameID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Year = table.Column<int>(type: "int", nullable: false),
+                    YearReleased = table.Column<int>(type: "int", nullable: false),
                     Rating = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
@@ -29,10 +29,10 @@ namespace Unit2Project.Migrations
 
             migrationBuilder.InsertData(
                 table: "Videogames",
-                columns: new[] { "VideogameID", "Name", "Rating", "Year" },
+                columns: new[] { "VideogameID", "Name", "Rating", "YearReleased" },
                 values: new object[,]
                 {
-                    { 1, "Casablanca", 5, 1942 },
+                    { 1, "Modern Warfare 2", 5, 2009 },
                     { 2, "Wonder Woman", 3, 2017 },
                     { 3, "Moonstruck", 4, 1988 }
                 });

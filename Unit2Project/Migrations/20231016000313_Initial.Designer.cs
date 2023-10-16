@@ -12,7 +12,7 @@ using Unit2Project.Models;
 namespace Unit2Project.Migrations
 {
     [DbContext(typeof(VideogameContext))]
-    [Migration("20231015235351_Initial")]
+    [Migration("20231016000313_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -41,7 +41,7 @@ namespace Unit2Project.Migrations
                         .IsRequired()
                         .HasColumnType("int");
 
-                    b.Property<int?>("Year")
+                    b.Property<int?>("YearReleased")
                         .IsRequired()
                         .HasColumnType("int");
 
@@ -53,23 +53,23 @@ namespace Unit2Project.Migrations
                         new
                         {
                             VideogameID = 1,
-                            Name = "Casablanca",
+                            Name = "Modern Warfare 2",
                             Rating = 5,
-                            Year = 1942
+                            YearReleased = 2009
                         },
                         new
                         {
                             VideogameID = 2,
                             Name = "Wonder Woman",
                             Rating = 3,
-                            Year = 2017
+                            YearReleased = 2017
                         },
                         new
                         {
                             VideogameID = 3,
                             Name = "Moonstruck",
                             Rating = 4,
-                            Year = 1988
+                            YearReleased = 1988
                         });
                 });
 #pragma warning restore 612, 618
