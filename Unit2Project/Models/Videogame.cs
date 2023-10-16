@@ -5,6 +5,7 @@ namespace Unit2Project.Models
 {
     public class Videogame 
     {
+        //validation and errors
         public int VideogameID { get; set; }
 
         [Required(ErrorMessage = "Please Enter a Name.")]

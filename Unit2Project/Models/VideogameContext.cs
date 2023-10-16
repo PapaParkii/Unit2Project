@@ -12,6 +12,7 @@ namespace Unit2Project.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Establish base database
             modelBuilder.Entity<Videogame>().HasData(
                 new Videogame
                 {
